@@ -1,0 +1,30 @@
+:root {
+    --primary-color : #70c8d4;
+    --secondary-color: #511f66;
+}
+
+nav {
+}
+
+.logo-nav-image {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+ /* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
