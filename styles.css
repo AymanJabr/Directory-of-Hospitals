@@ -1,20 +1,217 @@
+@font-face {
+  font-family: dancingScript;
+  src: url(./assets/DancingScript-VariableFont_wght.ttf);
+}
+
 :root {
     --primary-color : #70c8d4;
     --secondary-color: #511f66;
+    --transparent-background : rgba(201, 201, 201,0.7);
+    --lighter-gray : #dee2e6;
+    --darker-gray : #6d7073;
 }
 
 nav {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+footer {
+    background-color: var(--darker-gray);
+    color: rgb(202, 186, 186);
+}
+
+.footer-icons {
+    color: rgb(202, 186, 186);
+}
+
+.footer-copywrite-text-special {
+    color: var(--lighter-gray);
 }
 
 .logo-nav-image {
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
+}
+
+.logo-nav-text {
+    color: white;
+    font-family: dancingScript ,'Courier New', Courier, monospace;
+    font-weight: 500;
 }
 
 .menu-container-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.menu-nav-icons {
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./assets/hero-image.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-howItWorks-button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.2rem;
+    width: fit-content;
+    margin-left: 10vw;
+}
+
+.search-card {
+    background-color: var(--transparent-background);
+}
+
+.card-search-button {
+    background-color: var(--secondary-color);
+    border: 0;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.howItWorks-section-title {
+    color: var(--primary-color);
+}
+
+.howItWorks-grid {
+    grid-template-areas: "Search" "Locate" "Apply" "Relax";
+}
+
+.howItWorks-grid-search {
+    grid-area: Search;
+}
+
+.howItWorks-grid-locate {
+    grid-area: Locate;
+}
+
+.howItWorks-grid-apply {
+    grid-area: Apply;
+}
+
+.howItWorks-grid-relax {
+    grid-area: Relax;
+}
+
+.howItWorks-grid-icons {
+    color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+}
+
+.perk-title {
+    color: white;
+}
+
+.perk-description {
+    color: white;
+}
+
+.perk-button {
+    background-color: white;
+    border: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.perk1 {
+    background-color: indianred;
+}
+
+.perk1-button {
+    color: indianred !important;
+}
+
+.perk2 {
+    background-color: rgb(165, 164, 164);
+}
+
+.perk2-button {
+    color: rgb(165, 164, 164) !important;
+}
+
+.perk3 {
+    background-color: var(--primary-color);
+}
+
+.perk3-button {
+    color: var(--primary-color) !important;
+}
+
+.extra-links-section {
+    background-color: black;
+}
+
+.extra-links-text {
+    color: white;
+}
+
+.form-extra-links-send-button {
+    background-color: grey;
+    border-color: rgba(169, 165, 165, 0.8);
+}
+
+.form-extra-links-input {
+    background-color: black;
+}
+
+.extra-links-description {
+    color: white;
+}
+
+.extra-links-description-highlighted {
+    color: var(--primary-color);
+}
+
+.website-navigation-text {
+    color: white;
+    font-weight: bold;
+}
+
+.extra-links-maps-icon {
+    position: relative;
+    color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.extra-links-maps-icon-border {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: var(--lighter-gray);
+}
+
+.criteria-search-title {
+    color: gray;
+}
+
+.criteria-form-buttons {
+    color: white;
+}
+
+.clear-filter-criteria-form-button {
+    background-color: var(--secondary-color);
+}
+
+#criteria-search {
+    background-color: var(--lighter-gray);
 }
 
  /* Small devices (landscape phones, 576px and up) */
