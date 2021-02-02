@@ -210,6 +210,18 @@ footer {
     background-color: var(--secondary-color);
 }
 
+.search-results-card-image {
+    filter: brightness(55%);
+}
+
+.search-results-card-description {
+}
+
+.search-results-card-title {
+    font-size: 1.45rem;
+
+}
+
 #criteria-search {
     background-color: var(--lighter-gray);
 }
