@@ -17,35 +17,48 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div
-          class="logo-container-nav d-flex flex-row py-1 justify-content-center pr-3"
-        >
-          <img
-            class="logo-nav-image d-inline-block"
-            src="./assets/logo-blue.png"
-            alt="logo of Trumedis"
-          />
-          <h1 class="logo-nav-text d-inline-block">Trumedis</h1>
-        </div>
+    <nav class="row align-items-center">
+      <div
+        class="logo-container-nav d-flex col-12 col-md-5 flex-row pb-1 pt-4 justify-content-center pr-3"
+      >
+      <a href="./index.html">
+      <img
+          class="logo-nav-image d-inline-block"
+          src="./assets/logo-blue.png"
+          alt="logo of Trumedis"
+        />
+        <h1 class="logo-nav-text d-inline-block">Trumedis</h1></a>
+        
+      </div>
 
-        <div class="menu-container-nav px-5 mx-2 pt-2 pb-1">
+      <div class="menu-container-nav col-12 col-md-6 px-5 mx-2 pt-2 pb-1">
+        <div>
+          <a href="./search.html">
           <i class="fa fa-search menu-nav-icons"></i>
-          <i class="fa fa-user menu-nav-icons"></i>
-          <i class="fa fa-wifi menu-nav-icons"></i>
-          <i class="fa fa-bars menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">SEARCH</p></a>
         </div>
-      </nav>
-    </header>
+        <div>
+          <i class="fa fa-user menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">ABOUT</p>
+        </div>
+        <div>
+          <i class="fa fa-wifi menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">BLOG</p>
+        </div>
+        <div>
+          <i class="fa fa-bars menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">MORE...</p>
+        </div>
+      </div>
+    </nav>
 
     <main class="pt-5 mt-5">
       <section id="criteria-search" class="my-5 py-5">
         <h5 class="criteria-search-title text-center">
           Filter by Hospital name, State, Public/Private, and Specialization:
         </h5>
-        <form class="px-4">
-          <div class="form-group pt-4">
+        <form class="px-4 row">
+          <div class="form-group pt-4 pt-md-0 col-12 col-md-6 col-lg-2">
             <label class="font-weight-bold" for="hospitalName"
               >HOSPITAL NAME*</label
             >
@@ -57,7 +70,7 @@
               placeholder="St Mungo's for Magical Maladies"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group col-12 col-md-6 col-lg-2">
             <label class="font-weight-bold" for="stateNames">STATE</label>
             <select class="form-control" id="stateNames">
               <option>Alaska</option>
@@ -112,7 +125,7 @@
               <option>Wyoming</option>
             </select>
           </div>
-          <div class="form-group">
+          <div class="form-group col-12 col-md-6 col-lg-2">
             <label class="font-weight-bold" for="publicPrivateOption"
               >PUBLIC/PRIVATE</label
             >
@@ -121,7 +134,7 @@
               <option>Private</option>
             </select>
           </div>
-          <div class="form-group pb-3">
+          <div class="form-group pb-3 col-12 col-md-6 col-lg-2">
             <label class="font-weight-bold" for="Specialization"
               >SPECIALIZATION</label
             >
@@ -200,18 +213,20 @@
               <option>Vascular surgery</option>
             </select>
           </div>
-          <button
-            type="submit"
-            class="btn btn-primary criteria-form-buttons font-weight-bold"
-          >
-            Submit
-          </button>
-          <button
-            type="submit"
-            class="btn criteria-form-buttons clear-filter-criteria-form-button font-weight-bold"
-          >
-            clear filter
-          </button>
+          <div class="form-buttons-container col-12 pt-lg-4 col-lg-4">
+            <button
+              type="submit"
+              class="btn btn-primary criteria-form-buttons font-weight-bold mt-lg-1"
+            >
+              Submit
+            </button>
+            <button
+              type="submit"
+              class="btn criteria-form-buttons mt-lg-1 clear-filter-criteria-form-button font-weight-bold"
+            >
+              clear filter
+            </button>
+          </div>
         </form>
       </section>
 
@@ -221,8 +236,10 @@
           <span class="font-weight-bold"> 5 </span> Hospitals
         </h3>
 
-        <div class="search-results-container">
-          <div class="card bg-primary search-results text-white mx-3 mb-3">
+        <div class="search-results-container row mx-md-3">
+          <div
+            class="card bg-primary col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
             <a href="./details.html" class="stretched-link"></a>
             <img
               class="card-img search-results-card-image"
@@ -241,7 +258,9 @@
               <p class="card-text">Last updated 2 months ago</p>
             </div>
           </div>
-          <div class="card bg-primary search-results text-white mx-3 mb-3">
+          <div
+            class="card bg-primary col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
             <a href="./details.html" class="stretched-link"></a>
             <img
               class="card-img search-results-card-image"
@@ -260,7 +279,9 @@
               <p class="card-text">Last updated 2 months ago</p>
             </div>
           </div>
-          <div class="card bg-primary search-results text-white mx-3 mb-3">
+          <div
+            class="card bg-primary col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
             <a href="./details.html" class="stretched-link"></a>
             <img
               class="card-img search-results-card-image"
@@ -279,7 +300,9 @@
               <p class="card-text">Last updated 2 months ago</p>
             </div>
           </div>
-          <div class="card bg-primary search-results text-white mx-3 mb-3">
+          <div
+            class="card bg-primary col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
             <a href="./details.html" class="stretched-link"></a>
             <img
               class="card-img search-results-card-image"
@@ -298,7 +321,9 @@
               <p class="card-text">Last updated 2 months ago</p>
             </div>
           </div>
-          <div class="card bg-primary search-results text-white mx-3 mb-5">
+          <div
+            class="card bg-primary col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-5 mx-md-0"
+          >
             <a href="./details.html" class="stretched-link"></a>
             <img
               class="card-img search-results-card-image"
@@ -321,9 +346,9 @@
       </section>
 
       <section class="extra-links-section">
-        <div class="extra-links-nav pt-5">
+        <div class="extra-links-nav pt-5 row">
           <div
-            class="extra-links-website-navigation border-top border-bottom py-3 d-flex col-12 justify-content-around"
+            class="extra-links-website-navigation border-top border-bottom py-3 d-flex col-12 col-md-5 justify-content-around align-items-center"
           >
             <a href="#HeroSection" class="website-navigation-text"> HOME </a>
 
@@ -335,16 +360,17 @@
           </div>
 
           <div
-            class="extra-links-maps col-12 my-4 justify-content-center d-flex"
+            class="extra-links-maps col-12 col-md-2 px-md-0 my-4 justify-content-center d-flex"
           >
-            
-              <div
+            <i class="fas fa-map-marker-alt fa-3x extra-links-maps-icon">
+              <span
                 class="extra-links-maps-icon-border border rounded-circle p-5"
-              ><i class="fas fa-map-marker-alt fa-3x extra-links-maps-icon"></i></div>
+              ></span>
+            </i>
           </div>
 
           <div
-            class="extra-links-social-media border-top border-bottom d-flex justify-content-around py-3 col-12"
+            class="extra-links-social-media border-top border-bottom d-flex align-items-center justify-content-around py-3 col-12 col-md-5"
           >
             <a href="#" class="website-navigation-text"> FACEBOOK </a>
 
@@ -358,11 +384,13 @@
 
         <div class="extra-links-about-us container">
           <div class="row py-5">
-            <div class="col-12 extra-links-subscribe-container">
+            <div
+              class="col-12 col-md-4 extra-links-subscribe-container my-md-auto"
+            >
               <h5 class="extra-links-text text-center">SUBSCRIBE</h5>
 
               <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2 w-75">
+                <div class="form-group mb-2 w-75">
                   <input
                     type="email"
                     class="form-control rounded-0 form-extra-links-input"
@@ -377,7 +405,9 @@
                 </button>
               </form>
             </div>
-            <div class="col-12 extra-links-contact-container mt-5">
+            <div
+              class="col-12 col-md-4 extra-links-contact-container mt-5 my-md-auto"
+            >
               <h5 class="extra-links-text text-center">CONTACT US</h5>
               <p class="extra-links-description text-center">
                 Have a question or submission?
@@ -386,7 +416,9 @@
                 info@support.com
               </p>
             </div>
-            <div class="col-12 extra-links-about-container mt-5">
+            <div
+              class="col-12 col-md-4 extra-links-about-container mt-5 my-md-auto"
+            >
               <h5 class="extra-links-text text-center">ABOUT</h5>
               <p class="extra-links-description text-center">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -402,7 +434,7 @@
       </section>
     </main>
 
-    <footer class="d-flex flex-column justify-content-between py-3">
+    <footer class="d-flex flex-column flex-md-row justify-content-between py-3">
       <div class="footer-social-media d-flex flex-row justify-content-around">
         <a href="#"><i class="fab footer-icons fa-facebook-f"></i></a>
         <a href="#"><i class="fab footer-icons fa-twitter"></i></a>

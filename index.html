@@ -17,46 +17,61 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div
-          class="logo-container-nav d-flex flex-row py-1 justify-content-center pr-3"
-        >
-          <img
-            class="logo-nav-image d-inline-block"
-            src="./assets/logo-blue.png"
-            alt="logo of Trumedis"
-          />
-          <h1 class="logo-nav-text d-inline-block">Trumedis</h1>
-        </div>
+    <nav class="row align-items-center">
+      <div
+        class="logo-container-nav d-flex col-12 col-md-5 flex-row pb-1 pt-4 justify-content-center pr-3"
+      >
+      <a href="./index.html">
+      <img
+          class="logo-nav-image d-inline-block"
+          src="./assets/logo-blue.png"
+          alt="logo of Trumedis"
+        />
+        <h1 class="logo-nav-text d-inline-block">Trumedis</h1></a>
+        
+      </div>
 
-        <div class="menu-container-nav px-5 mx-2 pt-2 pb-1">
+      <div class="menu-container-nav col-12 col-md-6 px-5 mx-2 pt-2 pb-1">
+        <div>
+          <a href="./search.html">
           <i class="fa fa-search menu-nav-icons"></i>
-          <i class="fa fa-user menu-nav-icons"></i>
-          <i class="fa fa-wifi menu-nav-icons"></i>
-          <i class="fa fa-bars menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">SEARCH</p></a>
         </div>
-      </nav>
-    </header>
+        <div>
+          <i class="fa fa-user menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">ABOUT</p>
+        </div>
+        <div>
+          <i class="fa fa-wifi menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">BLOG</p>
+        </div>
+        <div>
+          <i class="fa fa-bars menu-nav-icons"></i>
+          <p class="d-none d-lg-inline menu-nav-text">MORE...</p>
+        </div>
+      </div>
+    </nav>
 
-    <main>
+    <main class="pt-5 mt-5">
       <section
         id="HeroSection"
         class="hero-section d-flex flex-column justify-content-center"
       >
-        <h2 class="hero-title ml-3">
+        <h2 class="hero-title ml-3 mx-md-5">
           Trumedis..... Your Gateway to Hospitals in the USA
         </h2>
 
-        <div class="card search-card rounded mx-3">
-          <div class="card-body">
-            <h5 class="card-title">SEARCH BY KEY WORD:</h5>
-            <div class="form-group">
-              <input type="text" class="form-control" id="SearchWords" />
+        <div class="card search-card rounded mx-3 mx-md-5">
+          <div class="card-body row">
+            <h5 class="card-title col-12">SEARCH BY KEY WORD:</h5>
+            <div class="card-search-container row mx-auto">
+              <div class="form-group card-search-input col-12 col-md-8">
+                <input type="text" class="form-control" id="SearchWords" />
+              </div>
+              <a href="./search.html" class="btn btn-primary card-search-button col-md-4"
+                >SEARCH</a
+              >
             </div>
-            <a href="#" class="btn btn-primary card-search-button w-100"
-              >SEARCH</a
-            >
           </div>
         </div>
 
@@ -71,8 +86,10 @@
         <h2 class="howItWorks-section-title text-center d-block my-5">
           TRUMEDIS WORKS IN FOUR SIMPLE STEPS.
         </h2>
-        <div class="howItWorks-grid">
-          <div class="howItWorks-grid-search text-center">
+        <div class="howItWorks-grid row">
+          <div
+            class="howItWorks-grid-search col-12 col-lg-6 mt-lg-5 text-center"
+          >
             <i class="fa fa-search fa-2x howItWorks-grid-icons"></i>
             <h5 class="howItWorks-grid-icon-title">1-SEARCH:</h5>
             <p class="howItWorks-grid-icon-description px-2">
@@ -82,7 +99,7 @@
               ullam nostrum veritatis voluptatem!
             </p>
           </div>
-          <div class="howItWorks-grid-locate mt-5 text-center">
+          <div class="howItWorks-grid-locate col-12 col-lg-6 mt-5 text-center">
             <i class="fas fa-map-marked-alt fa-2x howItWorks-grid-icons"></i>
             <h5 class="howItWorks-grid-icon-title">1-LOCATE:</h5>
             <p class="howItWorks-grid-icon-description px-2">
@@ -92,7 +109,7 @@
               ullam nostrum veritatis voluptatem!
             </p>
           </div>
-          <div class="howItWorks-grid-apply mt-5 text-center">
+          <div class="howItWorks-grid-apply col-12 col-lg-6 mt-5 text-center">
             <i class="fas fa-file-signature fa-2x howItWorks-grid-icons"></i>
             <h5 class="howItWorks-grid-icon-title">1-APPLY:</h5>
             <p class="howItWorks-grid-icon-description px-2">
@@ -102,7 +119,7 @@
               ullam nostrum veritatis voluptatem!
             </p>
           </div>
-          <div class="howItWorks-grid-relax mt-5 text-center">
+          <div class="howItWorks-grid-relax col-12 col-lg-6 mt-5 text-center">
             <i class="fas fa-couch fa-2x howItWorks-grid-icons"></i>
             <h5 class="howItWorks-grid-icon-title">1-RELAX:</h5>
             <p class="howItWorks-grid-icon-description px-2">
@@ -116,15 +133,20 @@
       </section>
 
       <section class="perks-section container">
-        <div class="perk1 row d-flex flex-column mt-3 py-3">
-          <div class="col-12 perk-image pb-4">
+        <div
+          class="perk1 perks row d-flex flex-column text-center flex-md-row mt-3 py-3"
+        >
+          <div class="col-12 col-md-6 order-md-3">
             <img
-              class="img-fluid rounded-circle px-5"
+              class="img-fluid rounded-circle px-5 perk-image"
               src="./assets/locations.JPG"
               alt="Hospital perk image"
             />
           </div>
-          <div class="col-12 d-flex flex-column">
+          <div class="d-none d-md-block col-md-1 order-md-2"></div>
+          <div
+            class="col-12 col-md-5 d-flex order-md-1 flex-column align-self-md-center"
+          >
             <h5 class="perk-title">
               Over 10,000 Hospitals registered with us.
             </h5>
@@ -138,15 +160,20 @@
             >
           </div>
         </div>
-        <div class="perk2 row d-flex flex-column py-3">
-          <div class="col-12 perk-image pb-4">
+        <div
+          class="perk2 perks row d-flex flex-column text-center flex-md-row mt-0 py-3"
+        >
+          <div class="col-12 col-md-6 order-md-3">
             <img
-              class="img-fluid rounded-circle px-5"
+              class="img-fluid rounded-circle px-5 perk-image"
               src="./assets/doctor.jpg"
               alt="Hospital perk image"
             />
           </div>
-          <div class="col-12 d-flex flex-column">
+          <div class="d-none d-md-block col-md-1 order-md-2"></div>
+          <div
+            class="col-12 col-md-5 d-flex order-md-1 flex-column align-self-md-center"
+          >
             <h5 class="perk-title">Find the closest specialist to you.</h5>
             <p class="perk-description">
               No need to travel across states in order to get treated by your
@@ -159,15 +186,20 @@
             >
           </div>
         </div>
-        <div class="perk3 row d-flex flex-column py-3">
-          <div class="col-12 perk-image pb-4">
+        <div
+          class="perk3 perks row d-flex flex-column text-center flex-md-row mt-0 py-3"
+        >
+          <div class="col-12 col-md-6 order-md-3">
             <img
-              class="img-fluid rounded"
+              class="img-fluid rounded px-5 perk-image"
               src="./assets/phone-with-image.jpg"
               alt="Hospital perk image"
             />
           </div>
-          <div class="col-12 d-flex flex-column">
+          <div class="d-none d-md-block col-md-1 order-md-2"></div>
+          <div
+            class="col-12 col-md-5 d-flex order-md-1 flex-column align-self-md-center"
+          >
             <h5 class="perk-title">Anytime Anywhere Any way!</h5>
             <p class="perk-description">
               Very convenient platforms that cut across any device including our
@@ -184,9 +216,9 @@
       </section>
 
       <section class="extra-links-section">
-        <div class="extra-links-nav pt-5">
+        <div class="extra-links-nav pt-5 row">
           <div
-            class="extra-links-website-navigation border-top border-bottom py-3 d-flex col-12 justify-content-around"
+            class="extra-links-website-navigation border-top border-bottom py-3 d-flex col-12 col-md-5 justify-content-around align-items-center"
           >
             <a href="#HeroSection" class="website-navigation-text"> HOME </a>
 
@@ -198,15 +230,17 @@
           </div>
 
           <div
-            class="extra-links-maps col-12 my-4 justify-content-center d-flex"
+            class="extra-links-maps col-12 col-md-2 px-md-0 my-4 justify-content-center d-flex"
           >
-            <div class="extra-links-maps-icon-border border rounded-circle p-5">
-              <i class="fas fa-map-marker-alt fa-3x extra-links-maps-icon"></i>
-            </div>
+            <i class="fas fa-map-marker-alt fa-3x extra-links-maps-icon">
+              <span
+                class="extra-links-maps-icon-border border rounded-circle p-5"
+              ></span>
+            </i>
           </div>
 
           <div
-            class="extra-links-social-media border-top border-bottom d-flex justify-content-around py-3 col-12"
+            class="extra-links-social-media border-top border-bottom d-flex align-items-center justify-content-around py-3 col-12 col-md-5"
           >
             <a href="#" class="website-navigation-text"> FACEBOOK </a>
 
@@ -220,11 +254,13 @@
 
         <div class="extra-links-about-us container">
           <div class="row py-5">
-            <div class="col-12 extra-links-subscribe-container">
+            <div
+              class="col-12 col-md-4 extra-links-subscribe-container my-md-auto"
+            >
               <h5 class="extra-links-text text-center">SUBSCRIBE</h5>
 
               <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2 w-75">
+                <div class="form-group mb-2 w-75">
                   <input
                     type="email"
                     class="form-control rounded-0 form-extra-links-input"
@@ -239,7 +275,9 @@
                 </button>
               </form>
             </div>
-            <div class="col-12 extra-links-contact-container mt-5">
+            <div
+              class="col-12 col-md-4 extra-links-contact-container mt-5 my-md-auto"
+            >
               <h5 class="extra-links-text text-center">CONTACT US</h5>
               <p class="extra-links-description text-center">
                 Have a question or submission?
@@ -248,7 +286,9 @@
                 info@support.com
               </p>
             </div>
-            <div class="col-12 extra-links-about-container mt-5">
+            <div
+              class="col-12 col-md-4 extra-links-about-container mt-5 my-md-auto"
+            >
               <h5 class="extra-links-text text-center">ABOUT</h5>
               <p class="extra-links-description text-center">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -264,7 +304,7 @@
       </section>
     </main>
 
-    <footer class="d-flex flex-column justify-content-between py-3">
+    <footer class="d-flex flex-column flex-md-row justify-content-between py-3">
       <div class="footer-social-media d-flex flex-row justify-content-around">
         <a href="#"><i class="fab footer-icons fa-facebook-f"></i></a>
         <a href="#"><i class="fab footer-icons fa-twitter"></i></a>
