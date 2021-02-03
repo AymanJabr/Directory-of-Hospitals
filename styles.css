@@ -407,7 +407,7 @@ header {
   }
 
   .perk3 > div > .perk-image {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
   }
 
   #SearchWords {
