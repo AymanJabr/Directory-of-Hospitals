@@ -18,6 +18,9 @@ nav {
   right: 0;
   left: 0;
   z-index: 3;
+  -webkit-box-shadow: 1px 11px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 11px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 11px 5px -3px rgba(0, 0, 0, 0.75);
 }
 
 footer {
@@ -32,7 +35,6 @@ header {
 .container {
   margin-left: 0;
   margin-right: 0;
-  position: static !important;
 }
 
 .row {
@@ -102,10 +104,6 @@ header {
   font-weight: 600;
 }
 
-.card-search-input {
-  /* width: 100%; */
-}
-
 .card-search-container {
   width: 100%;
 }
@@ -160,7 +158,7 @@ header {
 }
 
 .perk1-button {
-  color: indianred !important;
+  color: indianred;
 }
 
 .perk2 {
@@ -168,7 +166,7 @@ header {
 }
 
 .perk2-button {
-  color: rgb(165, 164, 164) !important;
+  color: rgb(165, 164, 164);
 }
 
 .perk3 {
@@ -176,7 +174,7 @@ header {
 }
 
 .perk3-button {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 .extra-links-section {
@@ -266,7 +264,7 @@ header {
 }
 
 .details-more-details-text:hover + div {
-  display: block !important;
+  display: block;
 }
 
 .details-information-section-title {
@@ -285,6 +283,12 @@ header {
 .perk-image {
   padding-bottom: 0;
   margin-bottom: 2rem;
+}
+
+.search-results {
+  -webkit-box-shadow: 1px 21px 24px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 21px 24px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 21px 24px -4px rgba(0, 0, 0, 0.75);
 }
 
 #criteria-search {
@@ -337,7 +341,7 @@ header {
   .hero-howItWorks-button {
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5rem !important;
+    padding: 0.5rem;
   }
 
   .perks {

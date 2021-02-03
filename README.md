@@ -4,7 +4,7 @@ Design of a USA-based Directory of Hospitals
 
 ![Screenshot-of-live-demo](./assets/screenshot.JPG)
 
-This is a project for the Microverse training program, Week 4, where I created a design for a new website based on design criteria from a [similar looking website](https://www.behance.net/gallery/25563385/PatashuleKE).
+This is a project for the Microverse training program, Week 4, where I created a design for a new website based on design criteria from [the design of PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE).
 
 ## Built With
 
