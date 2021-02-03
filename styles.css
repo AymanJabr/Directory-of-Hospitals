@@ -291,12 +291,8 @@ header {
   box-shadow: 1px 21px 24px -4px rgba(0, 0, 0, 0.75);
 }
 
-#criteria-search {
+.criteria-search-container {
   background-color: var(--lighter-gray);
-}
-
-#search-words {
-  padding-top: 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -306,10 +302,6 @@ header {
 
   .perk-image {
     height: 40vw;
-  }
-
-  .form-extra-links-input {
-    width: 100% !important;
   }
 }
 
@@ -414,7 +406,7 @@ header {
     margin-bottom: 0 !important;
   }
 
-  #SearchWords {
+  .SearchWords {
     padding-top: 22px;
     padding-bottom: 22px;
   }

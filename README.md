@@ -16,6 +16,14 @@ Bootstrap
 
 https://trumedis.netlify.app/
 
+## Installation
+
+1) Clone or download the files as a .zip file.
+
+2) Unzip the files to a folder, if you downloaded a .zip file.
+
+3) Double click on [index.html](./index.html) to open the main page of the website in a browser
+
 ## Author 👤
 
 ### Ayman Jabr
