@@ -6,7 +6,6 @@
 :root {
   --primary-color: #70c8d4;
   --secondary-color: #d55749;
-  /* --secondary-color: #511f66; */
   --transparent-background: rgba(201, 201, 201, 0.7);
   --lighter-gray: #dee2e6;
   --darker-gray: #6d7073;
@@ -346,7 +345,7 @@ header {
   }
 
   .perk-image {
-    padding-bottom: 0rem;
+    padding-bottom: 0;
   }
 
   .perk-title {
@@ -384,7 +383,7 @@ header {
     border: none;
   }
 
-  .extra-links-maps:before {
+  .extra-links-maps::before {
     position: absolute;
     border-bottom: 2px solid grey;
     height: 100%;
@@ -393,7 +392,7 @@ header {
     content: "";
   }
 
-  .extra-links-maps:after {
+  .extra-links-maps::after {
     position: absolute;
     border-top: 2px solid grey;
     height: 100%;
