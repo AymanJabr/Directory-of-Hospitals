@@ -305,7 +305,6 @@ header {
   }
 }
 
-/*  Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .hero-section {
     height: 50vh;
@@ -354,10 +353,6 @@ header {
     text-align: left;
   }
 
-  .perk-button {
-    margin-left: 0 !important;
-  }
-
   .container {
     max-width: none;
   }
@@ -375,7 +370,7 @@ header {
   }
 
   .search-results {
-    background-color: white !important;
+    background-color: white;
     border: none;
   }
 
@@ -403,7 +398,7 @@ header {
   }
 
   .perk3 > div > .perk-image {
-    margin-bottom: 0 !important;
+    margin-bottom: 0 ;
   }
 
   .SearchWords {
@@ -412,7 +407,6 @@ header {
   }
 }
 
-/* Large devices (desktops, 1024px and up) */
 @media (min-width: 992px) {
   .container {
     max-width: none;
