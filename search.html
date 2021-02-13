@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/93e2543f5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="row align-items-center">
+      <div
+        class="logo-container-nav d-flex col-12 col-md-5 flex-row pb-1 pt-4 justify-content-center pr-3"
+      >
+        <a href="./index.html">
+          <img
+            class="logo-nav-image d-inline-block"
+            src="./assets/logo-blue.png"
+            alt="logo of Trumedis"
+          />
+          <h1 class="logo-nav-text d-inline-block">Trumedis</h1></a
+        >
+      </div>
+
+      <div class="menu-container-nav col-12 col-md-6 px-5 mx-2 pt-2 pb-1">
+        <div>
+          <a href="./search.html">
+            <i class="fa fa-search menu-nav-icons"></i>
+            <p class="d-none d-lg-inline menu-nav-text">SEARCH</p></a
+          >
+        </div>
+        <div>
+          <a href="#">
+            <i class="fa fa-user menu-nav-icons"></i>
+            <p class="d-none d-lg-inline menu-nav-text">ABOUT</p></a
+          >
+        </div>
+        <div>
+          <a href="#">
+            <i class="fa fa-wifi menu-nav-icons"></i>
+            <p class="d-none d-lg-inline menu-nav-text">BLOG</p></a
+          >
+        </div>
+        <div>
+          <a href="#">
+            <i class="fa fa-bars menu-nav-icons"></i>
+            <p class="d-none d-lg-inline menu-nav-text">MORE...</p></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-5 mt-5">
+      <section class="criteria-search-container my-5 py-5">
+        <h5 class="criteria-search-title text-center">
+          Filter by Hospital name, State, Public/Private, and Specialization:
+        </h5>
+        <form class="px-4 row">
+          <div class="form-group pt-4 pt-md-0 col-12 col-md-6 col-lg-2">
+            <label class="font-weight-bold" for="hospitalName"
+              >HOSPITAL NAME*</label
+            >
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="hospitalName"
+              placeholder="St Mungo's for Magical Maladies"
+            />
+          </div>
+          <div class="form-group col-12 col-md-6 col-lg-2">
+            <label class="font-weight-bold" for="stateNames">STATE</label>
+            <select class="form-control" id="stateNames">
+              <option>Alaska</option>
+              <option>Alabama</option>
+              <option>Arizona</option>
+              <option>Arkansas</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Connecticut</option>
+              <option>Delaware</option>
+              <option>Florida</option>
+              <option>Georgia</option>
+              <option>Hawaii</option>
+              <option>Idaho</option>
+              <option>Illinois</option>
+              <option>Indiana</option>
+              <option>Iowa</option>
+              <option>Kansas</option>
+              <option>Kentucky</option>
+              <option>Louisiana</option>
+              <option>Maine</option>
+              <option>Maryland</option>
+              <option>Massachusetts</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option>Utah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option>Washington</option>
+              <option>West Virginia</option>
+              <option>Wisconsin</option>
+              <option>Wyoming</option>
+            </select>
+          </div>
+          <div class="form-group col-12 col-md-6 col-lg-2">
+            <label class="font-weight-bold" for="publicPrivateOption"
+              >PUBLIC/PRIVATE</label
+            >
+            <select class="form-control" id="publicPrivateOption">
+              <option>Public</option>
+              <option>Private</option>
+            </select>
+          </div>
+          <div class="form-group pb-3 col-12 col-md-6 col-lg-2">
+            <label class="font-weight-bold" for="Specialization"
+              >SPECIALIZATION</label
+            >
+            <select class="form-control" id="Specialization">
+              <option>Allergy and immunology</option>
+              <option>Adolescent medicine</option>
+              <option>Anesthesiology</option>
+              <option>Aerospace medicine</option>
+              <option>Bariatrics</option>
+              <option>Cardiology</option>
+              <option>Cardiothoracic surgery</option>
+              <option>Child and adolescent psychiatry</option>
+              <option>Clinical neurophysiology</option>
+              <option>Colorectal surgery</option>
+              <option>Dermatology</option>
+              <option>Developmental pediatrics</option>
+              <option>Emergency medicine</option>
+              <option>Endocrinology</option>
+              <option>Family Medicine</option>
+              <option>Forensic pathology</option>
+              <option>Forensic psychiatry</option>
+              <option>General surgery</option>
+              <option>General surgical oncology</option>
+              <option>Geriatrics</option>
+              <option>Geriatric psychiatry</option>
+              <option>Gynecologic oncology</option>
+              <option>Hematology</option>
+              <option>Hematologic pathology</option>
+              <option>Infectious disease</option>
+              <option>Internal medicine</option>
+              <option>Interventional radiology</option>
+              <option>Intensive care medicine</option>
+              <option>Maternal-fetal medicine</option>
+              <option>Medical biochemistry</option>
+              <option>Medical genetics</option>
+              <option>Medical oncology</option>
+              <option>Neonatology</option>
+              <option>Nephrology</option>
+              <option>Neurology</option>
+              <option>Neuropathology</option>
+              <option>Neurosurgery</option>
+              <option>Nuclear medicine</option>
+              <option>Obstetrics and gynecology</option>
+              <option>Occupational medicine</option>
+              <option>Ophthalmology</option>
+              <option>Orthopedic surgery</option>
+              <option>Oral and maxillofacial surgery</option>
+              <option>Otorhinolaryngology</option>
+              <option>Palliative care</option>
+              <option>Pathology</option>
+              <option>Pediatrics</option>
+              <option>Pediatric allergy and immunology</option>
+              <option>Pediatric cardiology</option>
+              <option>Pediatric emergency medicine</option>
+              <option>Pediatric endocrinology</option>
+              <option>Pediatric gastroenterology</option>
+              <option>Pediatric hematology and oncology</option>
+              <option>Pediatric infectious disease</option>
+              <option>Pediatric nephrology</option>
+              <option>Pediatric respiratory medicine</option>
+              <option>Pediatric rheumatology</option>
+              <option>Pediatric surgery</option>
+              <option>Physical medicine and rehabilitation</option>
+              <option>Plastic, reconstructive and aesthetic surgery</option>
+              <option>Psychiatry</option>
+              <option>Public health</option>
+              <option>Radiation oncology</option>
+              <option>Radiology</option>
+              <option>Reproductive endocrinology and infertility</option>
+              <option>Respiratory medicine</option>
+              <option>Rheumatology</option>
+              <option>Sports medicine</option>
+              <option>Thoracic surgery</option>
+              <option>Neuroradiology</option>
+              <option>Urology</option>
+              <option>Vascular surgery</option>
+            </select>
+          </div>
+          <div class="form-buttons-container col-12 pt-lg-4 col-lg-4">
+            <button
+              type="submit"
+              class="btn btn-primary criteria-form-buttons font-weight-bold mt-lg-1"
+            >
+              Submit
+            </button>
+            <button
+              type="submit"
+              class="btn criteria-form-buttons mt-lg-1 clear-filter-criteria-form-button font-weight-bold"
+            >
+              clear filter
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section id="search-results">
+        <h3 class="search-results-title text-center font-weight-light mb-5">
+          Search Results: Found
+          <span class="font-weight-bold"> 5 </span> Hospitals
+        </h3>
+
+        <div class="search-results-container row mx-md-3">
+          <div
+            class="card col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
+            <a href="./details.html" class="stretched-link"></a>
+            <img
+              class="card-img search-results-card-image"
+              src="./assets/hospital.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title search-results-card-title">
+                St Mungo's for Magical Maladies
+              </h5>
+              <p class="card-text search-results-card-description px-2">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 2 months ago</p>
+            </div>
+          </div>
+          <div
+            class="card col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
+            <a href="./details.html" class="stretched-link"></a>
+            <img
+              class="card-img search-results-card-image"
+              src="./assets/hospital.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title search-results-card-title">
+                St Mungo's for Magical Maladies
+              </h5>
+              <p class="card-text search-results-card-description px-2">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 2 months ago</p>
+            </div>
+          </div>
+          <div
+            class="card col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
+            <a href="./details.html" class="stretched-link"></a>
+            <img
+              class="card-img search-results-card-image"
+              src="./assets/hospital.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title search-results-card-title">
+                St Mungo's for Magical Maladies
+              </h5>
+              <p class="card-text search-results-card-description px-2">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 2 months ago</p>
+            </div>
+          </div>
+          <div
+            class="card col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-3 mx-md-0"
+          >
+            <a href="./details.html" class="stretched-link"></a>
+            <img
+              class="card-img search-results-card-image"
+              src="./assets/hospital.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title search-results-card-title">
+                St Mungo's for Magical Maladies
+              </h5>
+              <p class="card-text search-results-card-description px-2">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 2 months ago</p>
+            </div>
+          </div>
+          <div
+            class="card col-12 col-md-6 col-lg-4 search-results text-white mx-3 mb-5 mx-md-0"
+          >
+            <a href="./details.html" class="stretched-link"></a>
+            <img
+              class="card-img search-results-card-image"
+              src="./assets/hospital.jpg"
+              alt="Card image"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title search-results-card-title">
+                St Mungo's for Magical Maladies
+              </h5>
+              <p class="card-text search-results-card-description px-2">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 2 months ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="extra-links-section">
+        <div class="extra-links-nav pt-5 row">
+          <div
+            class="extra-links-website-navigation border-top border-bottom py-3 d-flex col-12 col-md-5 justify-content-around align-items-center"
+          >
+            <a href="#HeroSection" class="website-navigation-text"> HOME </a>
+
+            <a href="./search.html" class="website-navigation-text"> SEARCH </a>
+
+            <a href="#" class="website-navigation-text"> ABOUT US </a>
+
+            <a href="#" class="website-navigation-text"> ADVERTISE </a>
+          </div>
+
+          <div
+            class="extra-links-maps col-12 col-md-2 px-md-0 my-4 justify-content-center d-flex"
+          >
+            <i class="fas fa-map-marker-alt fa-3x extra-links-maps-icon">
+              <span
+                class="extra-links-maps-icon-border border rounded-circle p-5"
+              ></span>
+            </i>
+          </div>
+
+          <div
+            class="extra-links-social-media border-top border-bottom d-flex align-items-center justify-content-around py-3 col-12 col-md-5"
+          >
+            <a href="#" class="website-navigation-text"> FACEBOOK </a>
+
+            <a href="#" class="website-navigation-text"> TWITTER </a>
+
+            <a href="#" class="website-navigation-text"> BLOG </a>
+
+            <a href="#" class="website-navigation-text"> GOOGLE+ </a>
+          </div>
+        </div>
+
+        <div class="extra-links-about-us container">
+          <div class="row py-5">
+            <div
+              class="col-12 col-md-4 extra-links-subscribe-container my-md-auto"
+            >
+              <h5 class="extra-links-text text-center">SUBSCRIBE</h5>
+
+              <form class="form-inline">
+                <div class="form-group mb-2 w-75">
+                  <input
+                    type="email"
+                    class="form-control rounded-0 form-extra-links-input w-100"
+                    placeholder="JohnDoe@gmail.com"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary mb-2 w-25 rounded-0 form-extra-links-send-button"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div
+              class="col-12 col-md-4 extra-links-contact-container mt-5 my-md-auto"
+            >
+              <h5 class="extra-links-text text-center">CONTACT US</h5>
+              <p class="extra-links-description text-center">
+                Have a question or submission?
+              </p>
+              <p class="extra-links-description-highlighted text-center">
+                <a href="#">info@support.com</a>
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-4 extra-links-about-container mt-5 my-md-auto"
+            >
+              <h5 class="extra-links-text text-center">ABOUT</h5>
+              <p class="extra-links-description text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore magnam consequuntur quibusdam culpa adipisci. Natus
+                deleniti commodi tempora dolore,
+                <span class="extra-links-description-highlighted">
+                  <a href="#">Learn more...</a>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex flex-column flex-md-row justify-content-between py-3">
+      <div class="footer-social-media d-flex flex-row justify-content-around">
+        <a href="#"><i class="fab footer-icons fa-facebook-f"></i></a>
+        <a href="#"><i class="fab footer-icons fa-twitter"></i></a>
+        <a href="#"><i class="fab footer-icons fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab footer-icons fa-instagram"></i></a>
+      </div>
+      <div class="footer-copywrite">
+        <p class="footer-copywrite-text text-center px-2 pt-2">
+          <i class="far footer-icons fa-copyright"></i>
+          Design done by
+          <a target="blank" href="https://github.com/AymanJabr"
+            ><span class="footer-copywrite-text-special">Ayman Jabr</span></a
+          >, to contact me check out
+          <a target="blank" href="https://github.com/AymanJabr"
+            ><span class="footer-copywrite-text-special"
+              >github.com/AymanJabr</span
+            ></a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
